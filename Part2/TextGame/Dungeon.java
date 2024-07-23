@@ -29,7 +29,7 @@ public class Dungeon {
 
         Random random = new Random();
         for (int i = 0; i < level * 2; i++) {
-            enemies.add(new Enemy("Goblin", 30 + level * 10, 5 + level * 2));
+            enemies.add(new Enemy("Goblin", 30 + level * 10, 5 + level * 3));
         }
 
         items.add(new Item("Health Potion"));

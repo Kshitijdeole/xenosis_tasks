@@ -16,7 +16,7 @@ public abstract class Player {
         this.name = name;
         this.level=1;
         this.currentXP=0;
-        this.xpToNextLevel=100;
+        this.xpToNextLevel=50;
         this.inventory = new ArrayList<>();
     }
 
@@ -43,7 +43,7 @@ public abstract class Player {
     private void levelUP(){
         level++;
         this.attackPower+=5;
-        this.health+=10;
+        this.health+=40;
         this.currentXP-=xpToNextLevel;
         this.xpToNextLevel+=100;
         System.out.println("you leveled up!! you are now level"+this.level+".");
